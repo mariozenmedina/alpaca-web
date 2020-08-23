@@ -40,13 +40,13 @@
 /********************************* GERAL *********************************/
 html,body{.m0; .p0;}
 *{
-	font-family: Open Sans, Arial, Helvetica, sans-serif;
+	font-family: 'Quicksand', Open Sans, Arial, Helvetica, sans-serif;
 	-webkit-box-sizing: border-box;
 	-moz-box-sizing: border-box;
 	box-sizing: border-box;
 }
 .altfont{
-	font-family: 'Righteous', cursive;
+	font-family: 'Raleway', sans-serif; .w800; .uc;
 }
 .transition{
     -webkit-transition: all 200ms ease-in-out;
@@ -148,6 +148,11 @@ h3.subtitulo{
 .t48{font-size: 48px;}
 .t56{font-size: 56px;}
 .t72{font-size: 72px;}
+.t84{font-size: 84px;}
+.t96{font-size: 96px;}
+.t108{font-size: 108px;}
+.t114{font-size: 114px;}
+.t126{font-size: 126px;}
 
 .lh100{line-height: 100%;}
 .lh120{line-height: 120%;}
@@ -293,12 +298,13 @@ h3.subtitulo{
                     label{ display: none !important; }
                     .blob{ display: none !important; }
                     li{
-                        .ib;
+                        .ib; padding: 0 15px;
                         a{
-                            .bl; padding: 10px 15px; .t18; .w700; position: relative; .transition;
-                            &::after{ content: ''; .bl; height: 5px; width: 0%; position: absolute; bottom: 0; left: 0; .transition; }
+                            .bl; padding: 10px 0px; .t18; .w700; position: relative; .transition;
+                            &::after{ content: ''; .bl; .blaranja; height: 5px; width: 0%; position: absolute; bottom: 0; left: 0; .transition; }
                             &:hover{ .claranja; &::after{ width: 100%; } }
                         }
+                        &.whatsapp a{ &::after{ .bverde; } &:hover{ .cverde; } }
                     }
                 }
             }
@@ -309,6 +315,7 @@ h3.subtitulo{
 /*********************************** CAPA ***********************************/
 .capa#capa{
     .bgelo; position: relative; .tc;
+    background-image: linear-gradient(170deg, @gelo 69.9%, @verde 70%);
     .container{
         padding-top: 20px; padding-bottom: 100px;
         .alpaca{
@@ -323,7 +330,7 @@ h3.subtitulo{
             }
             img{ position: relative; z-index: 5; @media (max-width:767px){ max-height: 180px; } }
         }
-        h2{ display: none; }
+        h2{ display: none; .altfont; }
         p{
             .cgrafite; .t14; .w600; .lh180; max-width: 360px; margin: auto; margin-bottom: 20px;
             span{ .t16; .uc; .w800; .claranja; }
@@ -333,14 +340,14 @@ h3.subtitulo{
         }
     }
     @media (min-width:768px){
-        background-image: linear-gradient(to bottom right, @gelo 50%, @verde 50%);
+        background-image: linear-gradient(to bottom right, @gelo 49.9%, @verde 50%);
         .tl;
         .container{
             display: flex; align-items: center; justify-content: space-between; flex-direction: row-reverse; padding-top: 50px;
             &>div{ width: 50%; }
             .blob{ max-width: none; width: 50%; max-height: none; .m0; }
             h2{
-                .bl; .uc; .w900; .t36; position: relative; margin-top: 0;
+                .bl; .t36; position: relative; margin-top: 0; margin-bottom: 40px;
                 &::after{
                     content: ''; position: absolute; bottom: -10px; left: 0; height: 5px; width: 80px; .blaranja;
                 }
@@ -374,8 +381,116 @@ h3.subtitulo{
 }
 
 /*********************************** CLIENTES ***********************************/
+.servicos#servicos{
+    .bgelo; background-image: linear-gradient(70deg, @gelo 39.9%, @azul 40%, @azul 69.9%, @gelo 70%); padding-bottom: 50px;
+    .divisor{
+        height: 180px; background-image: linear-gradient(to bottom right, @verde 49.7%, @gelo 50%);
+    }
+    .container{
+        h2{
+            .t36; .w500; position: relative; margin-top: 0; .tr; .altfont;
+            &::after{
+                content: ''; position: absolute; bottom: -10px; right: 0; height: 5px; width: 80px; .blaranja;
+            }
+        }
+        .itens{
+            display: flex; flex-wrap: wrap; justify-content: center;
+            .item{
+                margin: 30px 0px; .bbranco; .rd5; .shadow; padding: 35px; .tc; position: relative; .transition; transition-duration: 500ms;
+                flex: 0 0 100%; max-width: 360px;
+                svg{ height: 30px; margin: auto; .cgrafite; .transition; }
+                h4{ .t18; .cgrafite; .altfont; .transition; }
+                p{ .t14; .cgrafite; .lh160; .transition; margin-bottom: 0; }
+            }
+        }
+    }
+    @media (min-width:768px){
+        background-image: linear-gradient(50deg, @gelo 39.9%, @azul 40%, @azul 69.9%, @gelo 70%);
+        .container{
+            .itens{
+                .item{
+                    background-image: linear-gradient(to bottom right, @azul 9.9%, @gelo 10%); background-size: 100% 100%;
+                    margin: 30px; flex: 0 0 40%;
+                    &:hover{
+                        background-size: 1100% 1100%;
+                        svg{ .cbranco; }
+                        h4{ .cbranco; }
+                        p{ .cbranco; }
+                    }
+                }
+            }
+        }
+    }
+    @media (min-width:992px){
+        .container{
+            h2{ .t48; }
+        }
+    }
+    @media (min-width:1200px){
+        .container{
+            h2{ .t56; }
+            .itens{
+                .item{
+                    flex: 1 1 20%;
+                }
+            }
+        }
+    }
+    @media (min-width:1400px){
+        background-image: linear-gradient(30deg, @gelo 39.9%, @azul 40%, @azul 69.9%, @gelo 70%);
+        .container{
+            h2{ .t72; }
+            .itens{
+                .item{
+                    flex: 1 1 20%;
+                }
+            }
+        }
+    }
+}
+
+/*********************************** CLIENTES ***********************************/
 .clientes#clientes{
-    height: 300px; .bverde; padding-top: 100px;
+    .bgelo; padding-top: 30px; padding-bottom: 100px;
+    .container{
+        max-width: none !important;
+        h2{
+            .t36; .w500; position: relative; margin-top: 0; .altfont;
+            &::after{
+                content: ''; position: absolute; bottom: -10px; left: 0; height: 5px; width: 80px; .blaranja;
+            }
+        }
+    }
+    .container-full{
+        width: 100%; max-width: 100%; display: flex; align-items: flex-start; justify-content: center; flex-wrap: wrap;
+        .item{
+            //flex: 0 0 48%;
+            display: flex; align-items: center; justify-content: center; height: 50px; .p10; position: relative;
+            flex: 0 1 auto;
+            /*@media(min-width:600px){ flex: 1 1 33.333%; }
+            @media(min-width:768px){ flex: 1 1 25%; }
+            @media(min-width:992px){ flex: 1 1 12.5%; }
+            @media(min-width:1200px){ flex: 1 1 6.25%; }
+            @media(min-width:1400px){ flex: 1 1 5%; }*/
+            img{ max-width: 100px; max-height: 20px; position: relative; z-index: 600; }
+            h5{ .cpreto; .uc; .t18; .tc; }
+        }
+    }
+    @media (min-width:992px){
+        .container{
+            h2{ .t48; }
+        }
+    }
+    @media (min-width:1200px){
+        .container{
+            h2{ .t56; }
+        }
+    }
+    @media (min-width:1400px){
+        .container{
+            h2{ .t72; }
+        }
+    }
 }
 
 

@@ -78,13 +78,15 @@ body {
   padding: 0;
 }
 * {
-  font-family: Open Sans, Arial, Helvetica, sans-serif;
+  font-family: 'Quicksand', Open Sans, Arial, Helvetica, sans-serif;
   -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;
   box-sizing: border-box;
 }
 .altfont {
-  font-family: 'Righteous', cursive;
+  font-family: 'Raleway', sans-serif;
+  font-weight: 800;
+  text-transform: uppercase;
 }
 .transition {
   -webkit-transition: all 200ms ease-in-out;
@@ -314,6 +316,21 @@ h3.subtitulo {
 }
 .t72 {
   font-size: 72px;
+}
+.t84 {
+  font-size: 84px;
+}
+.t96 {
+  font-size: 96px;
+}
+.t108 {
+  font-size: 108px;
+}
+.t114 {
+  font-size: 114px;
+}
+.t126 {
+  font-size: 126px;
 }
 .lh100 {
   line-height: 100%;
@@ -659,10 +676,11 @@ h3.subtitulo {
   }
   .topo#topo .container nav ul li {
     display: inline-block;
+    padding: 0 15px;
   }
   .topo#topo .container nav ul li a {
     display: block;
-    padding: 10px 15px;
+    padding: 10px 0px;
     font-size: 18px;
     font-weight: 700;
     position: relative;
@@ -674,6 +692,7 @@ h3.subtitulo {
   .topo#topo .container nav ul li a::after {
     content: '';
     display: block;
+    background-color: #F69337;
     height: 5px;
     width: 0%;
     position: absolute;
@@ -690,12 +709,19 @@ h3.subtitulo {
   .topo#topo .container nav ul li a:hover::after {
     width: 100%;
   }
+  .topo#topo .container nav ul li.whatsapp a::after {
+    background-color: #279F84;
+  }
+  .topo#topo .container nav ul li.whatsapp a:hover {
+    color: #279F84;
+  }
 }
 /*********************************** CAPA ***********************************/
 .capa#capa {
   background-color: #F7F7F7;
   position: relative;
   text-align: center;
+  background-image: linear-gradient(170deg, #F7F7F7 69.9%, #279F84 70%);
 }
 .capa#capa .container {
   padding-top: 20px;
@@ -761,6 +787,9 @@ h3.subtitulo {
 }
 .capa#capa .container h2 {
   display: none;
+  font-family: 'Raleway', sans-serif;
+  font-weight: 800;
+  text-transform: uppercase;
 }
 .capa#capa .container p {
   color: #333;
@@ -782,7 +811,7 @@ h3.subtitulo {
 }
 @media (min-width: 768px) {
   .capa#capa {
-    background-image: linear-gradient(to bottom right, #F7F7F7 50%, #279F84 50%);
+    background-image: linear-gradient(to bottom right, #F7F7F7 49.9%, #279F84 50%);
     text-align: left;
   }
   .capa#capa .container {
@@ -803,11 +832,10 @@ h3.subtitulo {
   }
   .capa#capa .container h2 {
     display: block;
-    text-transform: uppercase;
-    font-weight: 900;
     font-size: 36px;
     position: relative;
     margin-top: 0;
+    margin-bottom: 40px;
   }
   .capa#capa .container h2::after {
     content: '';
@@ -870,8 +898,205 @@ h3.subtitulo {
   }
 }
 /*********************************** CLIENTES ***********************************/
+.servicos#servicos {
+  background-color: #F7F7F7;
+  background-image: linear-gradient(70deg, #F7F7F7 39.9%, #317FC1 40%, #317FC1 69.9%, #F7F7F7 70%);
+  padding-bottom: 50px;
+}
+.servicos#servicos .divisor {
+  height: 180px;
+  background-image: linear-gradient(to bottom right, #279F84 49.7%, #F7F7F7 50%);
+}
+.servicos#servicos .container h2 {
+  font-size: 36px;
+  font-weight: 500;
+  position: relative;
+  margin-top: 0;
+  text-align: right;
+  font-family: 'Raleway', sans-serif;
+  font-weight: 800;
+  text-transform: uppercase;
+}
+.servicos#servicos .container h2::after {
+  content: '';
+  position: absolute;
+  bottom: -10px;
+  right: 0;
+  height: 5px;
+  width: 80px;
+  background-color: #F69337;
+}
+.servicos#servicos .container .itens {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+.servicos#servicos .container .itens .item {
+  margin: 30px 0px;
+  background-color: #FFF;
+  border-radius: 5px;
+  box-shadow: 11px 10px 38px 0px rgba(0, 0, 0, 0.2);
+  padding: 35px;
+  text-align: center;
+  position: relative;
+  -webkit-transition: all 200ms ease-in-out;
+  -moz-transition: all 200ms ease-in-out;
+  -o-transition: all 200ms ease-in-out;
+  transition: all 200ms ease-in-out;
+  transition-duration: 500ms;
+  flex: 0 0 100%;
+  max-width: 360px;
+}
+.servicos#servicos .container .itens .item svg {
+  height: 30px;
+  margin: auto;
+  color: #333;
+  -webkit-transition: all 200ms ease-in-out;
+  -moz-transition: all 200ms ease-in-out;
+  -o-transition: all 200ms ease-in-out;
+  transition: all 200ms ease-in-out;
+}
+.servicos#servicos .container .itens .item h4 {
+  font-size: 18px;
+  color: #333;
+  font-family: 'Raleway', sans-serif;
+  font-weight: 800;
+  text-transform: uppercase;
+  -webkit-transition: all 200ms ease-in-out;
+  -moz-transition: all 200ms ease-in-out;
+  -o-transition: all 200ms ease-in-out;
+  transition: all 200ms ease-in-out;
+}
+.servicos#servicos .container .itens .item p {
+  font-size: 14px;
+  color: #333;
+  line-height: 160%;
+  -webkit-transition: all 200ms ease-in-out;
+  -moz-transition: all 200ms ease-in-out;
+  -o-transition: all 200ms ease-in-out;
+  transition: all 200ms ease-in-out;
+  margin-bottom: 0;
+}
+@media (min-width: 768px) {
+  .servicos#servicos {
+    background-image: linear-gradient(50deg, #F7F7F7 39.9%, #317FC1 40%, #317FC1 69.9%, #F7F7F7 70%);
+  }
+  .servicos#servicos .container .itens .item {
+    background-image: linear-gradient(to bottom right, #317FC1 9.9%, #F7F7F7 10%);
+    background-size: 100% 100%;
+    margin: 30px;
+    flex: 0 0 40%;
+  }
+  .servicos#servicos .container .itens .item:hover {
+    background-size: 1100% 1100%;
+  }
+  .servicos#servicos .container .itens .item:hover svg {
+    color: #FFF;
+  }
+  .servicos#servicos .container .itens .item:hover h4 {
+    color: #FFF;
+  }
+  .servicos#servicos .container .itens .item:hover p {
+    color: #FFF;
+  }
+}
+@media (min-width: 992px) {
+  .servicos#servicos .container h2 {
+    font-size: 48px;
+  }
+}
+@media (min-width: 1200px) {
+  .servicos#servicos .container h2 {
+    font-size: 56px;
+  }
+  .servicos#servicos .container .itens .item {
+    flex: 1 1 20%;
+  }
+}
+@media (min-width: 1400px) {
+  .servicos#servicos {
+    background-image: linear-gradient(30deg, #F7F7F7 39.9%, #317FC1 40%, #317FC1 69.9%, #F7F7F7 70%);
+  }
+  .servicos#servicos .container h2 {
+    font-size: 72px;
+  }
+  .servicos#servicos .container .itens .item {
+    flex: 1 1 20%;
+  }
+}
+/*********************************** CLIENTES ***********************************/
 .clientes#clientes {
-  height: 300px;
-  background-color: #279F84;
-  padding-top: 100px;
+  background-color: #F7F7F7;
+  padding-top: 30px;
+  padding-bottom: 100px;
+}
+.clientes#clientes .container {
+  max-width: none !important;
+}
+.clientes#clientes .container h2 {
+  font-size: 36px;
+  font-weight: 500;
+  position: relative;
+  margin-top: 0;
+  font-family: 'Raleway', sans-serif;
+  font-weight: 800;
+  text-transform: uppercase;
+}
+.clientes#clientes .container h2::after {
+  content: '';
+  position: absolute;
+  bottom: -10px;
+  left: 0;
+  height: 5px;
+  width: 80px;
+  background-color: #F69337;
+}
+.clientes#clientes .container-full {
+  width: 100%;
+  max-width: 100%;
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+.clientes#clientes .container-full .item {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 50px;
+  padding: 10px;
+  position: relative;
+  flex: 0 1 auto;
+  /*@media(min-width:600px){ flex: 1 1 33.333%; }
+            @media(min-width:768px){ flex: 1 1 25%; }
+            @media(min-width:992px){ flex: 1 1 12.5%; }
+            @media(min-width:1200px){ flex: 1 1 6.25%; }
+            @media(min-width:1400px){ flex: 1 1 5%; }*/
+}
+.clientes#clientes .container-full .item img {
+  max-width: 100px;
+  max-height: 20px;
+  position: relative;
+  z-index: 600;
+}
+.clientes#clientes .container-full .item h5 {
+  color: #000;
+  text-transform: uppercase;
+  font-size: 18px;
+  text-align: center;
+}
+@media (min-width: 992px) {
+  .clientes#clientes .container h2 {
+    font-size: 48px;
+  }
+}
+@media (min-width: 1200px) {
+  .clientes#clientes .container h2 {
+    font-size: 56px;
+  }
+}
+@media (min-width: 1400px) {
+  .clientes#clientes .container h2 {
+    font-size: 72px;
+  }
 }
