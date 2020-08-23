@@ -1,0 +1,877 @@
+/********************************* CORES *********************************/
+.claranja {
+  color: #F69337;
+}
+.blaranja {
+  background-color: #F69337;
+}
+.claranja2 {
+  color: #F58142;
+}
+.blaranja2 {
+  background-color: #F58142;
+}
+.cverde {
+  color: #279F84;
+}
+.bverde {
+  background-color: #279F84;
+}
+.cazul {
+  color: #317FC1;
+}
+.bazul {
+  background-color: #317FC1;
+}
+.cpreto {
+  color: #000;
+}
+.bpreto {
+  background-color: #000;
+}
+.cescuro {
+  color: #1e1d22;
+}
+.bescuro {
+  background-color: #1e1d22;
+}
+.cgrafite {
+  color: #333;
+}
+.bgrafite {
+  background-color: #333;
+}
+.ccinzaescuro {
+  color: #777;
+}
+.bcinzaescuro {
+  background-color: #777;
+}
+.ccinza {
+  color: #AAA;
+}
+.bcinza {
+  background-color: #AAA;
+}
+.ccinzaclaro {
+  color: #EEE;
+}
+.bcinzaclaro {
+  background-color: #EEE;
+}
+.cgelo {
+  color: #F7F7F7;
+}
+.bgelo {
+  background-color: #F7F7F7;
+}
+.cbranco {
+  color: #FFF;
+}
+.bbranco {
+  background-color: #FFF;
+}
+/********************************* GERAL *********************************/
+html,
+body {
+  margin: 0;
+  padding: 0;
+}
+* {
+  font-family: Open Sans, Arial, Helvetica, sans-serif;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+.altfont {
+  font-family: 'Righteous', cursive;
+}
+.transition {
+  -webkit-transition: all 200ms ease-in-out;
+  -moz-transition: all 200ms ease-in-out;
+  -o-transition: all 200ms ease-in-out;
+  transition: all 200ms ease-in-out;
+}
+.no-transition {
+  -webkit-transition: none !important;
+  -moz-transition: none !important;
+  -o-transition: none !important;
+  transition: none !important;
+}
+.fast {
+  -webkit-transition-duration: 100ms;
+  -moz-transition-duration: 100ms;
+  -o-transition-duration: 100ms;
+  transition-duration: 100ms;
+}
+.fluid {
+  max-width: 100%;
+}
+.clear {
+  clear: both;
+}
+a,
+button,
+label {
+  text-decoration: none;
+  color: inherit;
+  border: 0;
+  outline: 0;
+  background: none;
+  cursor: pointer;
+}
+a:hover,
+button:hover,
+label:hover {
+  text-decoration: none;
+}
+ul,
+ol {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+.tabled {
+  display: table;
+}
+.tabled > div {
+  display: table-cell;
+  vertical-align: middle;
+}
+h2.titulo {
+  text-align: center;
+  font-size: 48px;
+  margin-top: 80px;
+  margin-bottom: 20px;
+}
+h3.subtitulo {
+  text-align: center;
+  font-size: 28px;
+  margin-top: 0;
+  color: #777;
+  font-weight: 400;
+}
+/*********************************** FORMAS ***********************************/
+.il {
+  display: inline;
+}
+.bl {
+  display: block;
+}
+.ib {
+  display: inline-block;
+}
+.rd100 {
+  border-radius: 100vh;
+}
+.rd0 {
+  border-radius: 0px;
+}
+.rd5 {
+  border-radius: 5px;
+}
+.rd10 {
+  border-radius: 10px;
+}
+.m0 {
+  margin: 0;
+}
+.mt1 {
+  margin-top: 1em;
+}
+.mb05 {
+  margin-bottom: 0.5em;
+}
+.mb1 {
+  margin-bottom: 1em;
+}
+.mb2 {
+  margin-bottom: 2em;
+}
+.mb3 {
+  margin-bottom: 3em;
+}
+.p0 {
+  padding: 0;
+}
+.p5 {
+  padding: 5px;
+}
+.p10 {
+  padding: 10px;
+}
+.p15 {
+  padding: 15px;
+}
+.p20 {
+  padding: 20px;
+}
+.pl10 {
+  padding-left: 10px;
+}
+.pt20 {
+  padding-top: 20px;
+}
+.pb20 {
+  padding-bottom: 20px;
+}
+/*********************************** FONTES TEXTOS ***********************************/
+.w100 {
+  font-weight: 100;
+}
+.w200 {
+  font-weight: 200;
+}
+.w300 {
+  font-weight: 300;
+}
+.w400 {
+  font-weight: 400;
+}
+.w500 {
+  font-weight: 500;
+}
+.w600 {
+  font-weight: 600;
+}
+.w700 {
+  font-weight: 700;
+}
+.w800 {
+  font-weight: 800;
+}
+.w900 {
+  font-weight: 900;
+}
+.i {
+  font-style: italic;
+}
+.uc {
+  text-transform: uppercase;
+}
+.tl {
+  text-align: left;
+}
+.tc {
+  text-align: center;
+}
+.tr {
+  text-align: right;
+}
+.t11 {
+  font-size: 11px;
+}
+.t12 {
+  font-size: 12px;
+}
+.t13 {
+  font-size: 13px;
+}
+.t14 {
+  font-size: 14px;
+}
+.t15 {
+  font-size: 15px;
+}
+.t16 {
+  font-size: 16px;
+}
+.t18 {
+  font-size: 18px;
+}
+.t20 {
+  font-size: 20px;
+}
+.t22 {
+  font-size: 22px;
+}
+.t24 {
+  font-size: 24px;
+}
+.t26 {
+  font-size: 26px;
+}
+.t28 {
+  font-size: 28px;
+}
+.t32 {
+  font-size: 32px;
+}
+.t36 {
+  font-size: 36px;
+}
+.t37 {
+  font-size: 37px;
+}
+.t42 {
+  font-size: 42px;
+}
+.t48 {
+  font-size: 48px;
+}
+.t56 {
+  font-size: 56px;
+}
+.t72 {
+  font-size: 72px;
+}
+.lh100 {
+  line-height: 100%;
+}
+.lh120 {
+  line-height: 120%;
+}
+.lh140 {
+  line-height: 140%;
+}
+.lh160 {
+  line-height: 160%;
+}
+.lh180 {
+  line-height: 180%;
+}
+.lh200 {
+  line-height: 200%;
+}
+/*********************************** CONTAINER ***********************************/
+.container-fluid {
+  margin: 0;
+  padding: 0;
+  max-width: 100%;
+}
+.container {
+  margin: auto;
+  padding: 0;
+  max-width: 100%;
+  padding-left: 15px;
+  padding-right: 15px;
+  position: relative;
+}
+@media (min-width: 576px) {
+  .container {
+    max-width: 576px;
+  }
+}
+@media (min-width: 768px) {
+  .container {
+    max-width: 768px;
+  }
+}
+@media (min-width: 992px) {
+  .container {
+    max-width: 992px;
+  }
+}
+@media (min-width: 1200px) {
+  .container {
+    max-width: 1200px;
+  }
+}
+@media (min-width: 1400px) {
+  .container {
+    max-width: 1400px;
+  }
+}
+/*********************************** ANIMAÇÃO ***********************************/
+@keyframes float {
+  0% {
+    box-shadow: 0 5px 5px 0px rgba(0, 0, 0, 0.2);
+    transform: translatey(0px);
+  }
+  50% {
+    box-shadow: 0 15px 5px 0px rgba(0, 0, 0, 0.1);
+    transform: translatey(-8px);
+  }
+  100% {
+    box-shadow: 0 5px 5px 0px rgba(0, 0, 0, 0.2);
+    transform: translatey(0px);
+  }
+}
+@keyframes botao-geleca {
+  0%,
+  100% {
+    border-radius: 30% 70% 72% 28% / 0% 0% 100% 100%;
+    top: 0;
+    right: 4%;
+    bottom: 15%;
+    left: 0;
+  }
+  25% {
+    border-radius: 100% 0% 0% 100% / 53% 43% 57% 47%;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 20%;
+  }
+  50% {
+    border-radius: 76% 24% 40% 60% / 100% 100% 0% 0%;
+    top: 15%;
+    right: 0;
+    bottom: 0;
+    left: 0;
+  }
+  75% {
+    border-radius: 0% 100% 100% 0% / 47% 73% 27% 53%;
+    top: 0;
+    right: 20%;
+    bottom: 0;
+    left: 0;
+  }
+}
+@keyframes geleca {
+  0%,
+  100% {
+    border-radius: 30% 70% 72% 28% / 0% 0% 100% 100%;
+  }
+  25% {
+    border-radius: 100% 0% 0% 100% / 53% 43% 57% 47%;
+  }
+  50% {
+    border-radius: 76% 24% 40% 60% / 100% 100% 0% 0%;
+  }
+  75% {
+    border-radius: 0% 100% 100% 0% / 47% 73% 27% 53%;
+  }
+}
+/*********************************** OBJETOS ***********************************/
+.shadow {
+  box-shadow: 11px 10px 38px 0px rgba(0, 0, 0, 0.2);
+}
+.geleca::before {
+  border-radius: 30% 70% 72% 28% / 0% 0% 100% 100%;
+  background-color: #000;
+  box-sizing: border-box;
+  content: '';
+  display: block;
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 15%;
+  right: 4%;
+  animation: botao-geleca linear infinite 3s;
+  filter: opacity(0.1);
+}
+.botao {
+  display: inline-block;
+  position: relative;
+  overflow: hidden;
+  font-size: 18px;
+  font-weight: 700;
+  border-radius: 5px;
+  box-shadow: 11px 10px 38px 0px rgba(0, 0, 0, 0.2);
+}
+.botao::before {
+  border-radius: 30% 70% 72% 28% / 0% 0% 100% 100%;
+  background-color: #000;
+  box-sizing: border-box;
+  content: '';
+  display: block;
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 15%;
+  right: 4%;
+  animation: botao-geleca linear infinite 3s;
+  filter: opacity(0.1);
+}
+.botao::before {
+  animation-play-state: paused;
+}
+.botao:hover::before {
+  animation-play-state: running;
+}
+.botao span {
+  position: relative;
+  padding: 20px 45px;
+  z-index: 5;
+  color: #FFF;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.botao span svg {
+  height: 40px;
+  margin-right: 10px;
+  margin-top: -20px;
+  margin-bottom: -20px;
+}
+/*********************************** TOPO ***********************************/
+.topo#topo {
+  background-color: #F7F7F7;
+  padding-top: 15px;
+  padding-bottom: 15px;
+}
+.topo#topo .container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.topo#topo .container h1 {
+  display: inline-block;
+  margin: 0;
+  padding: 0;
+  line-height: 100%;
+}
+.topo#topo .container h1 .logo {
+  width: 160px;
+}
+.topo#topo .container .open-menu {
+  display: inline-block;
+}
+.topo#topo .container .open-menu svg {
+  height: 50px;
+}
+@media (min-width: 1200px) {
+  .topo#topo .container .open-menu {
+    display: none !important;
+  }
+}
+.topo#topo .container #menu-input {
+  position: absolute;
+  height: 0;
+  width: 0;
+  overflow: hidden;
+  opacity: 0;
+  visibility: hidden;
+}
+.topo#topo .container #menu-input:checked ~ nav {
+  height: 100%;
+  padding-top: 20px;
+}
+@media (max-width: 1199px) {
+  .topo#topo .container nav {
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 999;
+    background-color: #317FC1;
+    -webkit-transition: all 200ms ease-in-out;
+    -moz-transition: all 200ms ease-in-out;
+    -o-transition: all 200ms ease-in-out;
+    transition: all 200ms ease-in-out;
+    transition-duration: 500ms;
+    overflow: hidden;
+    width: 100%;
+    height: 0%;
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    background-image: url("../img/mountain.png");
+    background-position: bottom center;
+    background-size: 100%;
+    background-repeat: no-repeat;
+  }
+  .topo#topo .container nav ul {
+    width: 100%;
+    text-align: center;
+  }
+  .topo#topo .container nav ul label {
+    padding: 20px;
+    display: inline-block;
+    position: absolute;
+    top: 0;
+    right: 0;
+    z-index: 55;
+  }
+  .topo#topo .container nav ul .blob {
+    display: inline-block;
+    width: 100%;
+    max-width: 350px;
+    margin: 10px auto 20px;
+    position: relative;
+    padding: 30px 50px 0 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .topo#topo .container nav ul .blob::before {
+    border-radius: 30% 70% 72% 28% / 0% 0% 100% 100%;
+    background-color: #000;
+    box-sizing: border-box;
+    content: '';
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 15%;
+    right: 4%;
+    animation: botao-geleca linear infinite 3s;
+    filter: opacity(0.1);
+  }
+  .topo#topo .container nav ul .blob::before {
+    border: solid 2px #000;
+    background: none;
+    filter: none;
+    animation-duration: 12s;
+  }
+  .topo#topo .container nav ul .blob::after {
+    border-radius: 30% 70% 72% 28% / 0% 0% 100% 100%;
+    border: solid 2px #F58142;
+    box-sizing: border-box;
+    content: '';
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 15%;
+    right: 4%;
+    animation: botao-geleca linear infinite reverse 15s;
+  }
+  .topo#topo .container nav ul .blob img {
+    position: relative;
+    z-index: 5;
+    padding: 5px;
+  }
+  .topo#topo .container nav ul .blob img.alpacaweb {
+    width: 65%;
+  }
+  .topo#topo .container nav ul .blob img.alpaca {
+    width: 35%;
+  }
+  .topo#topo .container nav ul li a {
+    display: block;
+    padding: 10px 0;
+    color: #FFF;
+    font-size: 24px;
+    font-weight: 700;
+    -webkit-transition: all 200ms ease-in-out;
+    -moz-transition: all 200ms ease-in-out;
+    -o-transition: all 200ms ease-in-out;
+    transition: all 200ms ease-in-out;
+  }
+  .topo#topo .container nav ul li a:hover {
+    font-size: 28px;
+  }
+}
+@media (min-width: 1200px) {
+  .topo#topo .container nav {
+    width: 100%;
+    padding-left: 15px;
+  }
+  .topo#topo .container nav ul {
+    text-align: right;
+  }
+  .topo#topo .container nav ul label {
+    display: none !important;
+  }
+  .topo#topo .container nav ul .blob {
+    display: none !important;
+  }
+  .topo#topo .container nav ul li {
+    display: inline-block;
+  }
+  .topo#topo .container nav ul li a {
+    display: block;
+    padding: 10px 15px;
+    font-size: 18px;
+    font-weight: 700;
+    position: relative;
+    -webkit-transition: all 200ms ease-in-out;
+    -moz-transition: all 200ms ease-in-out;
+    -o-transition: all 200ms ease-in-out;
+    transition: all 200ms ease-in-out;
+  }
+  .topo#topo .container nav ul li a::after {
+    content: '';
+    display: block;
+    height: 5px;
+    width: 0%;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    -webkit-transition: all 200ms ease-in-out;
+    -moz-transition: all 200ms ease-in-out;
+    -o-transition: all 200ms ease-in-out;
+    transition: all 200ms ease-in-out;
+  }
+  .topo#topo .container nav ul li a:hover {
+    color: #F69337;
+  }
+  .topo#topo .container nav ul li a:hover::after {
+    width: 100%;
+  }
+}
+/*********************************** CAPA ***********************************/
+.capa#capa {
+  background-color: #F7F7F7;
+  position: relative;
+  text-align: center;
+}
+.capa#capa .container {
+  padding-top: 20px;
+  padding-bottom: 100px;
+}
+.capa#capa .container .alpaca {
+  width: 100%;
+  animation: float ease infinite 800ms;
+  box-shadow: none !important;
+}
+.capa#capa .container .blob {
+  display: inline-block;
+  width: 100%;
+  max-width: 250px;
+  max-height: 250px;
+  margin: 0px auto 30px;
+  position: relative;
+  padding: 30px 50px 0 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.capa#capa .container .blob::before {
+  border-radius: 30% 70% 72% 28% / 0% 0% 100% 100%;
+  background-color: #000;
+  box-sizing: border-box;
+  content: '';
+  display: block;
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 15%;
+  right: 4%;
+  animation: botao-geleca linear infinite 3s;
+  filter: opacity(0.1);
+}
+.capa#capa .container .blob::before {
+  background-color: #317FC1;
+  filter: none;
+  animation-duration: 18s;
+}
+.capa#capa .container .blob::after {
+  border-radius: 30% 70% 72% 28% / 0% 0% 100% 100%;
+  border: solid 2px #F58142;
+  box-sizing: border-box;
+  content: '';
+  display: block;
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 15%;
+  right: 4%;
+  animation: botao-geleca linear infinite reverse 25s;
+}
+.capa#capa .container .blob img {
+  position: relative;
+  z-index: 5;
+}
+@media (max-width: 767px) {
+  .capa#capa .container .blob img {
+    max-height: 180px;
+  }
+}
+.capa#capa .container h2 {
+  display: none;
+}
+.capa#capa .container p {
+  color: #333;
+  font-size: 14px;
+  font-weight: 600;
+  line-height: 180%;
+  max-width: 360px;
+  margin: auto;
+  margin-bottom: 20px;
+}
+.capa#capa .container p span {
+  font-size: 16px;
+  text-transform: uppercase;
+  font-weight: 800;
+  color: #F69337;
+}
+.capa#capa .container a.botao {
+  margin: 10px 5px 5px 5px;
+}
+@media (min-width: 768px) {
+  .capa#capa {
+    background-image: linear-gradient(to bottom right, #F7F7F7 50%, #279F84 50%);
+    text-align: left;
+  }
+  .capa#capa .container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-direction: row-reverse;
+    padding-top: 50px;
+  }
+  .capa#capa .container > div {
+    width: 50%;
+  }
+  .capa#capa .container .blob {
+    max-width: none;
+    width: 50%;
+    max-height: none;
+    margin: 0;
+  }
+  .capa#capa .container h2 {
+    display: block;
+    text-transform: uppercase;
+    font-weight: 900;
+    font-size: 36px;
+    position: relative;
+    margin-top: 0;
+  }
+  .capa#capa .container h2::after {
+    content: '';
+    position: absolute;
+    bottom: -10px;
+    left: 0;
+    height: 5px;
+    width: 80px;
+    background-color: #F69337;
+  }
+  .capa#capa .container p {
+    margin: 15px 0;
+    max-width: none;
+    font-size: 16px;
+  }
+  .capa#capa .container p span {
+    font-size: 18px;
+  }
+  .capa#capa .container a.botao {
+    margin: 10px 0;
+  }
+}
+@media (min-width: 992px) {
+  .capa#capa .container > div {
+    max-width: 450px;
+  }
+  .capa#capa .container .blob {
+    max-width: 380px;
+  }
+  .capa#capa .container h2 {
+    font-size: 48px;
+  }
+}
+@media (min-width: 1200px) {
+  .capa#capa .container > div {
+    max-width: 470px;
+  }
+  .capa#capa .container .blob {
+    max-width: 480px;
+  }
+  .capa#capa .container h2 {
+    font-size: 56px;
+  }
+}
+@media (min-width: 1400px) {
+  .capa#capa .container > div {
+    max-width: none;
+  }
+  .capa#capa .container > div p {
+    max-width: 470px;
+  }
+  .capa#capa .container .blob {
+    max-width: 480px;
+  }
+  .capa#capa .container h2 {
+    font-size: 72px;
+  }
+  .capa#capa .container a.botao {
+    margin-right: 20px;
+  }
+}
+/*********************************** CLIENTES ***********************************/
+.clientes#clientes {
+  height: 300px;
+  background-color: #279F84;
+  padding-top: 100px;
+}
