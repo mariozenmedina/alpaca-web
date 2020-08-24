@@ -233,6 +233,21 @@ h3.subtitulo{
         border-radius: ~"0% 100% 100% 0% / 47% 73% 27% 53%";
     }
 }
+@keyframes radius {
+    0%,
+    100% {
+        border-radius: 50% 20% 20% 30%;
+    }
+    25% {
+        border-radius: 30% 50% 20% 20%;
+    }
+    50% {
+        border-radius: 20% 30% 50% 20%;
+    }
+    75% {
+        border-radius: 20% 20% 30% 50%;
+    }
+}
 
 /*********************************** OBJETOS ***********************************/
 .shadow{ box-shadow: 11px 10px 38px 0px rgba(0, 0, 0, 0.2); }
@@ -315,7 +330,8 @@ h3.subtitulo{
 /*********************************** CAPA ***********************************/
 .capa#capa{
     .bgelo; position: relative; .tc;
-    background-image: linear-gradient(170deg, @gelo 69.9%, @verde 70%);
+    background-image: linear-gradient(170deg, transparent 69.9%, @verde 70%), url("../img/code.jpg");
+        background-size: 100% 100%, cover;
     .container{
         padding-top: 20px; padding-bottom: 100px;
         .alpaca{
@@ -340,7 +356,8 @@ h3.subtitulo{
         }
     }
     @media (min-width:768px){
-        background-image: linear-gradient(to bottom right, @gelo 49.9%, @verde 50%);
+        background-image: linear-gradient(to bottom right, transparent 49.9%, @verde 50%), url("../img/code.jpg");
+        background-size: 100% 100%, cover;
         .tl;
         .container{
             display: flex; align-items: center; justify-content: space-between; flex-direction: row-reverse; padding-top: 50px;
@@ -380,11 +397,11 @@ h3.subtitulo{
     }
 }
 
-/*********************************** CLIENTES ***********************************/
+/*********************************** SERVIÇOS ***********************************/
 .servicos#servicos{
-    .bgelo; background-image: linear-gradient(70deg, @gelo 39.9%, @azul 40%, @azul 69.9%, @gelo 70%); padding-bottom: 50px;
+    .bgelo; background-image: linear-gradient(70deg, transparent 39.9%, @azul 40%, @azul 69.9%, transparent 70%); padding-bottom: 50px;
     .divisor{
-        height: 180px; background-image: linear-gradient(to bottom right, @verde 49.7%, @gelo 50%);
+        height: 180px; background-image: linear-gradient(to bottom right, @verde 49.7%, @gelo 50%); margin-top: -80px;
     }
     .container{
         h2{
@@ -405,7 +422,7 @@ h3.subtitulo{
         }
     }
     @media (min-width:768px){
-        background-image: linear-gradient(50deg, @gelo 39.9%, @azul 40%, @azul 69.9%, @gelo 70%);
+        background-image: linear-gradient(50deg, transparent 39.9%, @azul 40%, @azul 69.9%, transparent 70%);
         .container{
             .itens{
                 .item{
@@ -437,7 +454,7 @@ h3.subtitulo{
         }
     }
     @media (min-width:1400px){
-        background-image: linear-gradient(30deg, @gelo 39.9%, @azul 40%, @azul 69.9%, @gelo 70%);
+        background-image: linear-gradient(30deg, transparent 39.9%, @azul 40%, @azul 69.9%,transparent 70%);
         .container{
             h2{ .t72; }
             .itens{
@@ -449,31 +466,74 @@ h3.subtitulo{
     }
 }
 
-/*********************************** CLIENTES ***********************************/
-.clientes#clientes{
+/*********************************** SOBRE ***********************************/
+.sobre#sobre{
     .bgelo; padding-top: 30px; padding-bottom: 100px;
     .container{
-        max-width: none !important;
         h2{
             .t36; .w500; position: relative; margin-top: 0; .altfont;
             &::after{
                 content: ''; position: absolute; bottom: -10px; left: 0; height: 5px; width: 80px; .blaranja;
             }
         }
+        .mario{
+            position: relative; .ib; .geleca;
+            img{ border-radius: 50% 20%; max-width: 100%; width: 500px; animation: radius infinite linear 7s; }
+            &::before{ background: none; border: solid 2px @verde; filter: none; animation-duration: 26s; }
+        }
+    }
+    @media (min-width:768px){
+        .container{
+        }
+    }
+    @media (min-width:992px){
+        .container{
+            h2{ .t48; }
+        }
+    }
+    @media (min-width:1200px){
+        .container{
+            h2{ .t56; }
+            .itens{
+                .item{
+                    flex: 1 1 20%;
+                }
+            }
+        }
+    }
+    @media (min-width:1400px){
+        .container{
+            h2{ .t72; }
+        }
+    }
+}
+
+/*********************************** CLIENTES ***********************************/
+.clientes#clientes{
+    .bgelo; padding-top: 30px; padding-bottom: 100px;
+    background-image: linear-gradient(-25deg, transparent 39.9%, @cinzaclaro 40%, @cinzaclaro 69.9%, transparent 70%);
+    .container{
+        max-width: none !important;
+        h2{
+            .t36; .w500; position: relative; margin-top: 0; .altfont; .tr;
+            &::after{
+                content: ''; position: absolute; bottom: -10px; right: 0; height: 5px; width: 80px; .blaranja;
+            }
+        }
     }
     .container-full{
         width: 100%; max-width: 100%; display: flex; align-items: flex-start; justify-content: center; flex-wrap: wrap;
         .item{
-            //flex: 0 0 48%;
-            display: flex; align-items: center; justify-content: center; height: 50px; .p10; position: relative;
-            flex: 0 1 auto;
-            /*@media(min-width:600px){ flex: 1 1 33.333%; }
-            @media(min-width:768px){ flex: 1 1 25%; }
-            @media(min-width:992px){ flex: 1 1 12.5%; }
-            @media(min-width:1200px){ flex: 1 1 6.25%; }
-            @media(min-width:1400px){ flex: 1 1 5%; }*/
-            img{ max-width: 100px; max-height: 20px; position: relative; z-index: 600; }
+            display: flex; align-items: center; justify-content: center; height: 150px; .p20; position: relative; .transition;
+            flex: 0 1 auto; margin: 5px; border: solid 1px #DDD; .rd5; .bbranco; box-shadow: 2px 2px 5px 2px rgba(0,0,0,0.1);
+            /*@media(min-width:600px){ flex: 0 0 33.333%; }
+            @media(min-width:768px){ flex: 0 0 25%; }
+            @media(min-width:992px){ flex: 0 0 12.5%; }
+            @media(min-width:1200px){ flex: 0 0 6.25%; }
+            @media(min-width:1400px){ flex: 0 0 5%; }*/
+            img{ max-width: 200px; max-height: 100%; position: relative; z-index: 600; .transition; }
             h5{ .cpreto; .uc; .t18; .tc; }
+            &:hover{ border-color: @laranja2; img{ transform: scale(1.1); } }
         }
     }
     @media (min-width:992px){

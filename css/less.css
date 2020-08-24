@@ -450,6 +450,21 @@ h3.subtitulo {
     border-radius: 0% 100% 100% 0% / 47% 73% 27% 53%;
   }
 }
+@keyframes radius {
+  0%,
+  100% {
+    border-radius: 50% 20% 20% 30%;
+  }
+  25% {
+    border-radius: 30% 50% 20% 20%;
+  }
+  50% {
+    border-radius: 20% 30% 50% 20%;
+  }
+  75% {
+    border-radius: 20% 20% 30% 50%;
+  }
+}
 /*********************************** OBJETOS ***********************************/
 .shadow {
   box-shadow: 11px 10px 38px 0px rgba(0, 0, 0, 0.2);
@@ -721,7 +736,8 @@ h3.subtitulo {
   background-color: #F7F7F7;
   position: relative;
   text-align: center;
-  background-image: linear-gradient(170deg, #F7F7F7 69.9%, #279F84 70%);
+  background-image: linear-gradient(170deg, transparent 69.9%, #279F84 70%), url("../img/code.jpg");
+  background-size: 100% 100%, cover;
 }
 .capa#capa .container {
   padding-top: 20px;
@@ -811,7 +827,8 @@ h3.subtitulo {
 }
 @media (min-width: 768px) {
   .capa#capa {
-    background-image: linear-gradient(to bottom right, #F7F7F7 49.9%, #279F84 50%);
+    background-image: linear-gradient(to bottom right, transparent 49.9%, #279F84 50%), url("../img/code.jpg");
+    background-size: 100% 100%, cover;
     text-align: left;
   }
   .capa#capa .container {
@@ -897,15 +914,16 @@ h3.subtitulo {
     margin-right: 20px;
   }
 }
-/*********************************** CLIENTES ***********************************/
+/*********************************** SERVIÇOS ***********************************/
 .servicos#servicos {
   background-color: #F7F7F7;
-  background-image: linear-gradient(70deg, #F7F7F7 39.9%, #317FC1 40%, #317FC1 69.9%, #F7F7F7 70%);
+  background-image: linear-gradient(70deg, transparent 39.9%, #317FC1 40%, #317FC1 69.9%, transparent 70%);
   padding-bottom: 50px;
 }
 .servicos#servicos .divisor {
   height: 180px;
   background-image: linear-gradient(to bottom right, #279F84 49.7%, #F7F7F7 50%);
+  margin-top: -80px;
 }
 .servicos#servicos .container h2 {
   font-size: 36px;
@@ -979,7 +997,7 @@ h3.subtitulo {
 }
 @media (min-width: 768px) {
   .servicos#servicos {
-    background-image: linear-gradient(50deg, #F7F7F7 39.9%, #317FC1 40%, #317FC1 69.9%, #F7F7F7 70%);
+    background-image: linear-gradient(50deg, transparent 39.9%, #317FC1 40%, #317FC1 69.9%, transparent 70%);
   }
   .servicos#servicos .container .itens .item {
     background-image: linear-gradient(to bottom right, #317FC1 9.9%, #F7F7F7 10%);
@@ -1015,7 +1033,7 @@ h3.subtitulo {
 }
 @media (min-width: 1400px) {
   .servicos#servicos {
-    background-image: linear-gradient(30deg, #F7F7F7 39.9%, #317FC1 40%, #317FC1 69.9%, #F7F7F7 70%);
+    background-image: linear-gradient(30deg, transparent 39.9%, #317FC1 40%, #317FC1 69.9%, transparent 70%);
   }
   .servicos#servicos .container h2 {
     font-size: 72px;
@@ -1024,11 +1042,84 @@ h3.subtitulo {
     flex: 1 1 20%;
   }
 }
+/*********************************** SOBRE ***********************************/
+.sobre#sobre {
+  background-color: #F7F7F7;
+  padding-top: 30px;
+  padding-bottom: 100px;
+}
+.sobre#sobre .container h2 {
+  font-size: 36px;
+  font-weight: 500;
+  position: relative;
+  margin-top: 0;
+  font-family: 'Raleway', sans-serif;
+  font-weight: 800;
+  text-transform: uppercase;
+}
+.sobre#sobre .container h2::after {
+  content: '';
+  position: absolute;
+  bottom: -10px;
+  left: 0;
+  height: 5px;
+  width: 80px;
+  background-color: #F69337;
+}
+.sobre#sobre .container .mario {
+  position: relative;
+  display: inline-block;
+}
+.sobre#sobre .container .mario::before {
+  border-radius: 30% 70% 72% 28% / 0% 0% 100% 100%;
+  background-color: #000;
+  box-sizing: border-box;
+  content: '';
+  display: block;
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 15%;
+  right: 4%;
+  animation: botao-geleca linear infinite 3s;
+  filter: opacity(0.1);
+}
+.sobre#sobre .container .mario img {
+  border-radius: 50% 20%;
+  max-width: 100%;
+  width: 500px;
+  animation: radius infinite linear 7s;
+}
+.sobre#sobre .container .mario::before {
+  background: none;
+  border: solid 2px #279F84;
+  filter: none;
+  animation-duration: 26s;
+}
+@media (min-width: 992px) {
+  .sobre#sobre .container h2 {
+    font-size: 48px;
+  }
+}
+@media (min-width: 1200px) {
+  .sobre#sobre .container h2 {
+    font-size: 56px;
+  }
+  .sobre#sobre .container .itens .item {
+    flex: 1 1 20%;
+  }
+}
+@media (min-width: 1400px) {
+  .sobre#sobre .container h2 {
+    font-size: 72px;
+  }
+}
 /*********************************** CLIENTES ***********************************/
 .clientes#clientes {
   background-color: #F7F7F7;
   padding-top: 30px;
   padding-bottom: 100px;
+  background-image: linear-gradient(-25deg, transparent 39.9%, #EEE 40%, #EEE 69.9%, transparent 70%);
 }
 .clientes#clientes .container {
   max-width: none !important;
@@ -1041,12 +1132,13 @@ h3.subtitulo {
   font-family: 'Raleway', sans-serif;
   font-weight: 800;
   text-transform: uppercase;
+  text-align: right;
 }
 .clientes#clientes .container h2::after {
   content: '';
   position: absolute;
   bottom: -10px;
-  left: 0;
+  right: 0;
   height: 5px;
   width: 80px;
   background-color: #F69337;
@@ -1063,27 +1155,46 @@ h3.subtitulo {
   display: flex;
   align-items: center;
   justify-content: center;
-  height: 50px;
-  padding: 10px;
+  height: 150px;
+  padding: 20px;
   position: relative;
+  -webkit-transition: all 200ms ease-in-out;
+  -moz-transition: all 200ms ease-in-out;
+  -o-transition: all 200ms ease-in-out;
+  transition: all 200ms ease-in-out;
   flex: 0 1 auto;
-  /*@media(min-width:600px){ flex: 1 1 33.333%; }
-            @media(min-width:768px){ flex: 1 1 25%; }
-            @media(min-width:992px){ flex: 1 1 12.5%; }
-            @media(min-width:1200px){ flex: 1 1 6.25%; }
-            @media(min-width:1400px){ flex: 1 1 5%; }*/
+  margin: 5px;
+  border: solid 1px #DDD;
+  border-radius: 5px;
+  background-color: #FFF;
+  box-shadow: 2px 2px 5px 2px rgba(0, 0, 0, 0.1);
+  /*@media(min-width:600px){ flex: 0 0 33.333%; }
+            @media(min-width:768px){ flex: 0 0 25%; }
+            @media(min-width:992px){ flex: 0 0 12.5%; }
+            @media(min-width:1200px){ flex: 0 0 6.25%; }
+            @media(min-width:1400px){ flex: 0 0 5%; }*/
 }
 .clientes#clientes .container-full .item img {
-  max-width: 100px;
-  max-height: 20px;
+  max-width: 200px;
+  max-height: 100%;
   position: relative;
   z-index: 600;
+  -webkit-transition: all 200ms ease-in-out;
+  -moz-transition: all 200ms ease-in-out;
+  -o-transition: all 200ms ease-in-out;
+  transition: all 200ms ease-in-out;
 }
 .clientes#clientes .container-full .item h5 {
   color: #000;
   text-transform: uppercase;
   font-size: 18px;
   text-align: center;
+}
+.clientes#clientes .container-full .item:hover {
+  border-color: #F58142;
+}
+.clientes#clientes .container-full .item:hover img {
+  transform: scale(1.1);
 }
 @media (min-width: 992px) {
   .clientes#clientes .container h2 {
