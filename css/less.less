@@ -427,6 +427,8 @@ h3.subtitulo{
             .itens{
                 .item{
                     background-image: linear-gradient(to bottom right, @azul 9.9%, @gelo 10%); background-size: 100% 100%;
+					&:nth-child(3n+2){ background-image: linear-gradient(to bottom right, @verde 9.9%, @gelo 10%); background-size: 100% 100%; }
+					&:nth-child(3n+3){ background-image: linear-gradient(to bottom right, @laranja 9.9%, @gelo 10%); background-size: 100% 100%; }
                     margin: 30px; flex: 0 0 40%;
                     &:hover{
                         background-size: 1100% 1100%;
@@ -524,14 +526,9 @@ h3.subtitulo{
     .container-full{
         width: 100%; max-width: 100%; display: flex; align-items: flex-start; justify-content: center; flex-wrap: wrap;
         .item{
-            display: flex; align-items: center; justify-content: center; height: 150px; .p20; position: relative; .transition;
+            display: flex; align-items: center; justify-content: center; height: 100px; .p20; position: relative; .transition;
             flex: 0 1 auto; margin: 5px; border: solid 1px #DDD; .rd5; .bbranco; box-shadow: 2px 2px 5px 2px rgba(0,0,0,0.1);
-            /*@media(min-width:600px){ flex: 0 0 33.333%; }
-            @media(min-width:768px){ flex: 0 0 25%; }
-            @media(min-width:992px){ flex: 0 0 12.5%; }
-            @media(min-width:1200px){ flex: 0 0 6.25%; }
-            @media(min-width:1400px){ flex: 0 0 5%; }*/
-            img{ max-width: 200px; max-height: 100%; position: relative; z-index: 600; .transition; }
+            img{ max-width: 100px; max-height: 100%; position: relative; z-index: 600; .transition; }
             h5{ .cpreto; .uc; .t18; .tc; }
             &:hover{ border-color: @laranja2; img{ transform: scale(1.1); } }
         }
@@ -540,6 +537,12 @@ h3.subtitulo{
         .container{
             h2{ .t48; }
         }
+		.container-full{
+			.item{
+				height: 150px;
+				img{ max-width: 200px; }
+			}
+		}
     }
     @media (min-width:1200px){
         .container{
@@ -553,8 +556,15 @@ h3.subtitulo{
     }
 }
 
-
-
-
-
-
+/*********************************** CRÉDITOS ***********************************/
+.credito#credito{
+	.bgelo; padding-top: 50px; padding-bottom: 200px; border-bottom: solid 30px @grafite;
+	.container{
+		.tc; @media(min-width:992px){ display: flex; align-items: center; justify-content: center; }
+		nowrap{ white-space: nowrap; }
+		h6{
+			.uc; .t12; margin-right: 20px; .lh180;
+			@media(min-width:992px){ .t18; }
+		}
+	}
+}

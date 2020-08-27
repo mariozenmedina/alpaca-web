@@ -85,9 +85,11 @@
 <div class="sobre" id="sobre">
     <div class="container">
         <h2>Sobre a Alpaca</h2>
-        <div class="mario">
-            <img src="./img/mario.jpg" alt="Foto do Mário, programador e dono da Alpaca Web.">
-        </div>
+		<div>
+        	<div class="mario">
+            	<img src="./img/mario.jpg" alt="Foto do Mário, programador e dono da Alpaca Web.">
+        	</div>
+		</div>
     </div>
 </div>
 <div class="clientes" id="clientes">
@@ -95,28 +97,77 @@
         <h2>Clientes &amp; Parceiros</h2>
     </div>
     <div class="container-full">
-        <div class="item"> <img src="./img/clientes/7vivah.png" alt="logo de cliente" class="logo"> </div>
-        <div class="item"> <img src="./img/clientes/abdi.png" alt="logo de cliente" class="logo"> </div>
-        <div class="item"> <img src="./img/clientes/academe.png" alt="logo de cliente" class="logo"> </div>
-        <div class="item"> <img src="./img/clientes/acordofechado.png" alt="logo de cliente" class="logo"> </div>
-        <div class="item"> <img src="./img/clientes/acp.png" alt="logo de cliente" class="logo"> </div>
-        <div class="item"> <img src="./img/clientes/adg.png" alt="logo de cliente" class="logo"> </div>
-        <div class="item"> <img src="./img/clientes/alziras.png" alt="logo de cliente" class="logo"> </div>
-        <div class="item"> <img src="./img/clientes/bagosport.png" alt="logo de cliente" class="logo"> </div>
-        <div class="item"> <img src="./img/clientes/bandalha.png" alt="logo de cliente" class="logo"> </div>
-        <div class="item"> <img src="./img/clientes/barragarden.png" alt="logo de cliente" class="logo"> </div>
-        <div class="item"> <img src="./img/clientes/bestfitness.png" alt="logo de cliente" class="logo"> </div>
-        <div class="item"> <img src="./img/clientes/bgmrodotec.png" alt="logo de cliente" class="logo"> </div>
+		<div class="item"> <img src="./img/clientes/ccbr.png" alt="logo de cliente" class="logo"> </div>
+		<div class="item"> <img src="./img/clientes/fgv.png" alt="logo de cliente" class="logo"> </div>
+		<div class="item"> <img src="./img/clientes/abdi.png" alt="logo de cliente" class="logo"> </div>
+		<div class="item"> <img src="./img/clientes/fgvgap.png" alt="logo de cliente" class="logo"> </div>
+		<div class="item"> <img src="./img/clientes/supermarket.png" alt="logo de cliente" class="logo"> </div>
+		<div class="item"> <img src="./img/clientes/neymatogrosso.png" alt="logo de cliente" class="logo"> </div>
+		<div class="item"> <img src="./img/clientes/barragarden.png" alt="logo de cliente" class="logo"> </div>
+		<div class="item"> <img src="./img/clientes/garriga.png" alt="logo de cliente" class="logo"> </div>
+		<div class="item"> <img src="./img/clientes/cafe.png" alt="logo de cliente" class="logo"> </div>
+		<div class="item"> <img src="./img/clientes/tapronto.png" alt="logo de cliente" class="logo"> </div>
+		<div class="item"> <img src="./img/clientes/hzcomunica.png" alt="logo de cliente" class="logo"> </div>
+		<div class="item"> <img src="./img/clientes/acordofechado.png" alt="logo de cliente" class="logo"> </div>
+		<div class="item"> <img src="./img/clientes/alziras.png" alt="logo de cliente" class="logo"> </div>
+		<div class="item"> <img src="./img/clientes/bagosport.png" alt="logo de cliente" class="logo"> </div>
+		<div class="item"> <img src="./img/clientes/orkestra.png" alt="logo de cliente" class="logo"> </div>
+		<div class="item"> <img src="./img/clientes/ebaufrj.png" alt="logo de cliente" class="logo"> </div>
+		<div class="item"> <img src="./img/clientes/fresenius.png" alt="logo de cliente" class="logo"> </div>
+		<div class="item"> <img src="./img/clientes/nephrosys.png" alt="logo de cliente" class="logo"> </div>
+		<div class="item"> <img src="./img/clientes/zirix.png" alt="logo de cliente" class="logo"> </div>
+        <div class="item"> <img src="./img/clientes/zum.png" alt="logo de cliente" class="logo"> </div>
+		<div class="item"> <img src="./img/clientes/selecon.png" alt="logo de cliente" class="logo"> </div>
+		<div class="item"> <img src="./img/clientes/maricasa.png" alt="logo de cliente" class="logo"> </div>
+        <div class="item"> <img src="./img/clientes/massydobrasil.png" alt="logo de cliente" class="logo"> </div>
+		<div class="item"> <img src="./img/clientes/luciamenezes.png" alt="logo de cliente" class="logo"> </div>
+        <div class="item"> <img src="./img/clientes/mcm.png" alt="logo de cliente" class="logo"> </div>
+		<div class="item"> <img src="./img/clientes/resiliencefund.png" alt="logo de cliente" class="logo"> </div>
+		<div class="item"> <img src="./img/clientes/oburgues.png" alt="logo de cliente" class="logo"> </div>
+		<div class="item"> <img src="./img/clientes/acp.png" alt="logo de cliente" class="logo"> </div>
+		<div class="item"> <img src="./img/clientes/priner.png" alt="logo de cliente" class="logo"> </div>
+		<div class="item"> <img src="./img/clientes/smartcoat.png" alt="logo de cliente" class="logo"> </div>
+		<div class="item"> <img src="./img/clientes/hadidadvogados.png" alt="logo de cliente" class="logo"> </div>
+		<div class="item"> <img src="./img/clientes/adg.png" alt="logo de cliente" class="logo"> </div>
+		<div class="item"> <img src="./img/clientes/claudionavarro.png" alt="logo de cliente" class="logo"> </div>
+		<div class="item"> <img src="./img/clientes/redecidadedigital.png" alt="logo de cliente" class="logo"> </div>
+		<div class="item"> <img src="./img/clientes/squarefoot.png" alt="logo de cliente" class="logo"> </div>
+		<div class="item"> <img src="./img/clientes/vetimage.png" alt="logo de cliente" class="logo"> </div>
+		<div class="item"> <img src="./img/clientes/bgmrodotec.png" alt="logo de cliente" class="logo"> </div>
         <div class="item"> <img src="./img/clientes/blogdafazenda.png" alt="logo de cliente" class="logo"> </div>
+		<div class="item"> <img src="./img/clientes/bestfitness.png" alt="logo de cliente" class="logo"> </div>
+		<div class="item"> <img src="./img/clientes/rjaj.png" alt="logo de cliente" class="logo"> </div>
+		<div class="item"> <img src="./img/clientes/via4.png" alt="logo de cliente" class="logo"> </div>
+		<div class="item"> <img src="./img/clientes/vilatorresdigital.png" alt="logo de cliente" class="logo"> </div>
+		<div class="item"> <img src="./img/clientes/cearaautocenter.png" alt="logo de cliente" class="logo"> </div>
+		<div class="item"> <img src="./img/clientes/santamonica.png" alt="logo de cliente" class="logo"> </div>
+        <div class="item"> <img src="./img/clientes/bandalha.png" alt="logo de cliente" class="logo"> </div>
         <div class="item"> <img src="./img/clientes/byairbrasil.png" alt="logo de cliente" class="logo"> </div>
-        <div class="item"> <img src="./img/clientes/cacaregras.png" alt="logo de cliente" class="logo"> </div>
-        <div class="item"> <img src="./img/clientes/cafe.png" alt="logo de cliente" class="logo"> </div>
-        <div class="item"> <img src="./img/clientes/carvaonalesco.png" alt="logo de cliente" class="logo"> </div>
-        <div class="item"> <img src="./img/clientes/ccbr.png" alt="logo de cliente" class="logo"> </div>
-        <div class="item"> <img src="./img/clientes/cearaautocenter.png" alt="logo de cliente" class="logo"> </div>
-        <div class="item"> <img src="./img/clientes/claudionavarro.png" alt="logo de cliente" class="logo"> </div>
-        <div class="item"> <img src="./img/clientes/colarinhovip.png" alt="logo de cliente" class="logo"> </div>
-        <div class="item"> <img src="./img/clientes/congressopr2013.png" alt="logo de cliente" class="logo"> </div>
+        <div class="item"> <img src="./img/clientes/cosmoars.png" alt="logo de cliente" class="logo"> </div>
+        <div class="item"> <img src="./img/clientes/crossfitkm.png" alt="logo de cliente" class="logo"> </div>
+        <div class="item"> <img src="./img/clientes/docesbalbi.png" alt="logo de cliente" class="logo"> </div>
+        <div class="item"> <img src="./img/clientes/domatacadista.png" alt="logo de cliente" class="logo"> </div>
+        <div class="item"> <img src="./img/clientes/dontcry.png" alt="logo de cliente" class="logo"> </div>
+        <div class="item"> <img src="./img/clientes/dour.png" alt="logo de cliente" class="logo"> </div>
+        <div class="item"> <img src="./img/clientes/enos.png" alt="logo de cliente" class="logo"> </div>
+        <div class="item"> <img src="./img/clientes/forumredecidadedigital.png" alt="logo de cliente" class="logo"> </div>
+        <div class="item"> <img src="./img/clientes/geekmagazine.png" alt="logo de cliente" class="logo"> </div>
+        <div class="item"> <img src="./img/clientes/imaginejogos.jpg" alt="logo de cliente" class="logo"> </div>
+        <div class="item"> <img src="./img/clientes/justicaecidadania.png" alt="logo de cliente" class="logo"> </div>
+        <div class="item"> <img src="./img/clientes/korujafilms.png" alt="logo de cliente" class="logo"> </div>
+        <div class="item"> <img src="./img/clientes/litt.png" alt="logo de cliente" class="logo"> </div>
+        <div class="item"> <img src="./img/clientes/mdbfrj.png" alt="logo de cliente" class="logo"> </div>
+        <div class="item"> <img src="./img/clientes/noar.png" alt="logo de cliente" class="logo"> </div>
+        <div class="item"> <img src="./img/clientes/osbrasil.png" alt="logo de cliente" class="logo"> </div>
+        <div class="item"> <img src="./img/clientes/paciello.png" alt="logo de cliente" class="logo"> </div>
+        <div class="item"> <img src="./img/clientes/plenoconhecimento.png" alt="logo de cliente" class="logo"> </div>
+        <div class="item"> <img src="./img/clientes/radionovelo.png" alt="logo de cliente" class="logo"> </div>
+        <div class="item"> <img src="./img/clientes/redesregionais.png" alt="logo de cliente" class="logo"> </div>
+        <div class="item"> <img src="./img/clientes/reservegastrobar.png" alt="logo de cliente" class="logo"> </div>
+		<div class="item"> <img src="./img/clientes/tudodaflorida.png" alt="logo de cliente" class="logo"> </div>
+        <div class="item"> <img src="./img/clientes/p2p.png" alt="logo de cliente" class="logo"> </div>
+		<div class="item"> <img src="./img/clientes/rcdcom.png" alt="logo de cliente" class="logo"> </div>
+		<div class="item"> <img src="./img/clientes/congressopr2013.png" alt="logo de cliente" class="logo"> </div>
         <div class="item"> <img src="./img/clientes/congressopr2014.png" alt="logo de cliente" class="logo"> </div>
         <div class="item"> <img src="./img/clientes/congressopr2015.png" alt="logo de cliente" class="logo"> </div>
         <div class="item"> <img src="./img/clientes/congressopr2016.png" alt="logo de cliente" class="logo"> </div>
@@ -127,76 +178,36 @@
         <div class="item"> <img src="./img/clientes/congressosc2017.png" alt="logo de cliente" class="logo"> </div>
         <div class="item"> <img src="./img/clientes/congressosc2018.png" alt="logo de cliente" class="logo"> </div>
         <div class="item"> <img src="./img/clientes/congressosc2019.png" alt="logo de cliente" class="logo"> </div>
-        <div class="item"> <img src="./img/clientes/cosmoars.png" alt="logo de cliente" class="logo"> </div>
-        <div class="item"> <img src="./img/clientes/crossfitkm.png" alt="logo de cliente" class="logo"> </div>
-        <div class="item"> <img src="./img/clientes/docesbalbi.png" alt="logo de cliente" class="logo"> </div>
-        <div class="item"> <img src="./img/clientes/domatacadista.png" alt="logo de cliente" class="logo"> </div>
-        <div class="item"> <img src="./img/clientes/dontcry.png" alt="logo de cliente" class="logo"> </div>
-        <div class="item"> <img src="./img/clientes/dour.png" alt="logo de cliente" class="logo"> </div>
-        <div class="item"> <img src="./img/clientes/ebaufrj.png" alt="logo de cliente" class="logo"> </div>
-        <div class="item"> <img src="./img/clientes/enos.png" alt="logo de cliente" class="logo"> </div>
-        <div class="item"> <img src="./img/clientes/fgvgap.png" alt="logo de cliente" class="logo"> </div>
-        <div class="item"> <img src="./img/clientes/forumredecidadedigital.png" alt="logo de cliente" class="logo"> </div>
-        <div class="item"> <img src="./img/clientes/gabrielbotafogo.png" alt="logo de cliente" class="logo"> </div>
-        <div class="item"> <img src="./img/clientes/garriga.png" alt="logo de cliente" class="logo"> </div>
-        <div class="item"> <img src="./img/clientes/geekmagazine.png" alt="logo de cliente" class="logo"> </div>
-        <div class="item"> <img src="./img/clientes/gim.png" alt="logo de cliente" class="logo"> </div>
-        <div class="item"> <img src="./img/clientes/hadidadvogados.png" alt="logo de cliente" class="logo"> </div>
-        <div class="item"> <img src="./img/clientes/hzcomunica.jpg" alt="logo de cliente" class="logo"> </div>
-        <div class="item"> <img src="./img/clientes/imaginejogos.jpg" alt="logo de cliente" class="logo"> </div>
-        <div class="item"> <img src="./img/clientes/jcseger.png" alt="logo de cliente" class="logo"> </div>
-        <div class="item"> <img src="./img/clientes/justicaecidadania.png" alt="logo de cliente" class="logo"> </div>
-        <div class="item"> <img src="./img/clientes/kauanybuhrer.png" alt="logo de cliente" class="logo"> </div>
-        <div class="item"> <img src="./img/clientes/korujafilms.png" alt="logo de cliente" class="logo"> </div>
-        <div class="item"> <img src="./img/clientes/litt.png" alt="logo de cliente" class="logo"> </div>
-        <div class="item"> <img src="./img/clientes/luciamenezes.png" alt="logo de cliente" class="logo"> </div>
-        <div class="item"> <img src="./img/clientes/maricasa.png" alt="logo de cliente" class="logo"> </div>
-        <div class="item"> <img src="./img/clientes/massydobrasil.png" alt="logo de cliente" class="logo"> </div>
-        <div class="item"> <img src="./img/clientes/mcm.png" alt="logo de cliente" class="logo"> </div>
-        <div class="item"> <img src="./img/clientes/mdbfrj.png" alt="logo de cliente" class="logo"> </div>
-        <div class="item"> <img src="./img/clientes/morada.png" alt="logo de cliente" class="logo"> </div>
-        <div class="item"> <img src="./img/clientes/nephrosys.png" alt="logo de cliente" class="logo"> </div>
-        <div class="item"> <img src="./img/clientes/neymatogrosso.png" alt="logo de cliente" class="logo"> </div>
-        <div class="item"> <img src="./img/clientes/noar.png" alt="logo de cliente" class="logo"> </div>
-        <div class="item"> <img src="./img/clientes/oburgues.png" alt="logo de cliente" class="logo"> </div>
-        <div class="item"> <img src="./img/clientes/orientare.png" alt="logo de cliente" class="logo"> </div>
-        <div class="item"> <img src="./img/clientes/orkestra.png" alt="logo de cliente" class="logo"> </div>
-        <div class="item"> <img src="./img/clientes/osbrasil.png" alt="logo de cliente" class="logo"> </div>
-        <div class="item"> <img src="./img/clientes/p2p.png" alt="logo de cliente" class="logo"> </div>
-        <div class="item"> <img src="./img/clientes/paciello.png" alt="logo de cliente" class="logo"> </div>
+		<div class="item"> <img src="./img/clientes/cacaregras.png" alt="logo de cliente" class="logo"> </div>
+        <div class="item"> <img src="./img/clientes/carvaonalesco.png" alt="logo de cliente" class="logo"> </div>
+		<div class="item"> <img src="./img/clientes/colarinhovip.png" alt="logo de cliente" class="logo"> </div>
+		<div class="item"> <img src="./img/clientes/gabrielbotafogo.png" alt="logo de cliente" class="logo"> </div>
+		<div class="item"> <img src="./img/clientes/gim.png" alt="logo de cliente" class="logo"> </div>
+		<div class="item"> <img src="./img/clientes/jcseger.png" alt="logo de cliente" class="logo"> </div>
+		<div class="item"> <img src="./img/clientes/kauanybuhrer.png" alt="logo de cliente" class="logo"> </div>
+		<div class="item"> <img src="./img/clientes/morada.png" alt="logo de cliente" class="logo"> </div>
+		<div class="item"> <img src="./img/clientes/orientare.png" alt="logo de cliente" class="logo"> </div>
+		<div class="item"> <img src="./img/clientes/participa.png" alt="logo de cliente" class="logo"> </div>
         <div class="item"> <img src="./img/clientes/paesleme.png" alt="logo de cliente" class="logo"> </div>
         <div class="item"> <img src="./img/clientes/pagepro.png" alt="logo de cliente" class="logo"> </div>
-        <div class="item"> <img src="./img/clientes/participa.png" alt="logo de cliente" class="logo"> </div>
+		<div class="item"> <img src="./img/clientes/riobox.png" alt="logo de cliente" class="logo"> </div>
         <div class="item"> <img src="./img/clientes/pinhaisinteligente.png" alt="logo de cliente" class="logo"> </div>
         <div class="item"> <img src="./img/clientes/pitangueirasdigital.png" alt="logo de cliente" class="logo"> </div>
-        <div class="item"> <img src="./img/clientes/plenoconhecimento.png" alt="logo de cliente" class="logo"> </div>
-        <div class="item"> <img src="./img/clientes/primewolves.png" alt="logo de cliente" class="logo"> </div>
-        <div class="item"> <img src="./img/clientes/priner.png" alt="logo de cliente" class="logo"> </div>
-        <div class="item"> <img src="./img/clientes/radionovelo.png" alt="logo de cliente" class="logo"> </div>
-        <div class="item"> <img src="./img/clientes/rcdcom.png" alt="logo de cliente" class="logo"> </div>
-        <div class="item"> <img src="./img/clientes/redecidadedigital.png" alt="logo de cliente" class="logo"> </div>
-        <div class="item"> <img src="./img/clientes/redesregionais.png" alt="logo de cliente" class="logo"> </div>
-        <div class="item"> <img src="./img/clientes/rentcopacabana.png" alt="logo de cliente" class="logo"> </div>
-        <div class="item"> <img src="./img/clientes/reservegastrobar.png" alt="logo de cliente" class="logo"> </div>
-        <div class="item"> <img src="./img/clientes/resiliencefund.png" alt="logo de cliente" class="logo"> </div>
-        <div class="item"> <img src="./img/clientes/riobox.png" alt="logo de cliente" class="logo"> </div>
-        <div class="item"> <img src="./img/clientes/rjaj.png" alt="logo de cliente" class="logo"> </div>
+		<div class="item"> <img src="./img/clientes/primewolves.png" alt="logo de cliente" class="logo"> </div>
+		<div class="item"> <img src="./img/clientes/rentcopacabana.png" alt="logo de cliente" class="logo"> </div>
         <div class="item"> <img src="./img/clientes/rsvpfacil.png" alt="logo de cliente" class="logo"> </div>
         <div class="item"> <img src="./img/clientes/rsvpnet.png" alt="logo de cliente" class="logo"> </div>
-        <div class="item"> <img src="./img/clientes/santamonica.png" alt="logo de cliente" class="logo"> </div>
-        <div class="item"> <img src="./img/clientes/selecon.png" alt="logo de cliente" class="logo"> </div>
-        <div class="item"> <img src="./img/clientes/smartcoat.png" alt="logo de cliente" class="logo"> </div>
         <div class="item"> <img src="./img/clientes/solarisecoenergy.png" alt="logo de cliente" class="logo"> </div>
-        <div class="item"> <img src="./img/clientes/squarefoot.png" alt="logo de cliente" class="logo"> </div>
-        <div class="item"> <img src="./img/clientes/supermarket.png" alt="logo de cliente" class="logo"> </div>
         <div class="item"> <img src="./img/clientes/telemacoborba.png" alt="logo de cliente" class="logo"> </div>
-        <div class="item"> <img src="./img/clientes/tudodaflorida.png" alt="logo de cliente" class="logo"> </div>
-        <div class="item"> <img src="./img/clientes/vetimage.png" alt="logo de cliente" class="logo"> </div>
-        <div class="item"> <img src="./img/clientes/via4.png" alt="logo de cliente" class="logo"> </div>
-        <div class="item"> <img src="./img/clientes/vilatorresdigital.png" alt="logo de cliente" class="logo"> </div>
         <div class="item"> <img src="./img/clientes/villagebox.png" alt="logo de cliente" class="logo"> </div>
-        <div class="item"> <img src="./img/clientes/zirix.png" alt="logo de cliente" class="logo"> </div>
-        <div class="item"> <img src="./img/clientes/zum.png" alt="logo de cliente" class="logo"> </div>
+		<div class="item"> <img src="./img/clientes/7vivah.png" alt="logo de cliente" class="logo"> </div>
+        <div class="item"> <img src="./img/clientes/academe.png" alt="logo de cliente" class="logo"> </div>
     </div>
+</div>
+<div class="credito" id="credito">
+	<div class="container">
+		<h6>NENHUM DIREITO RESERVADO - PODE COPIAR, <nowrap>EU SEI QUE VOCÊ GOSTOU</nowrap></h6>
+		<a href="" class="botao bverde"><span><svg aria-hidden="true" focusable="false" data-prefix="fab" data-icon="whatsapp" class="svg-inline--fa fa-whatsapp fa-w-14" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><path fill="currentColor" d="M380.9 97.1C339 55.1 283.2 32 223.9 32c-122.4 0-222 99.6-222 222 0 39.1 10.2 77.3 29.6 111L0 480l117.7-30.9c32.4 17.7 68.9 27 106.1 27h.1c122.3 0 224.1-99.6 224.1-222 0-59.3-25.2-115-67.1-157zm-157 341.6c-33.2 0-65.7-8.9-94-25.7l-6.7-4-69.8 18.3L72 359.2l-4.4-7c-18.5-29.4-28.2-63.3-28.2-98.2 0-101.7 82.8-184.5 184.6-184.5 49.3 0 95.6 19.2 130.4 54.1 34.8 34.9 56.2 81.2 56.1 130.5 0 101.8-84.9 184.6-186.6 184.6zm101.2-138.2c-5.5-2.8-32.8-16.2-37.9-18-5.1-1.9-8.8-2.8-12.5 2.8-3.7 5.6-14.3 18-17.6 21.8-3.2 3.7-6.5 4.2-12 1.4-32.6-16.3-54-29.1-75.5-66-5.7-9.8 5.7-9.1 16.3-30.3 1.8-3.7.9-6.9-.5-9.7-1.4-2.8-12.5-30.1-17.1-41.2-4.5-10.8-9.1-9.3-12.5-9.5-3.2-.2-6.9-.2-10.6-.2-3.7 0-9.7 1.4-14.8 6.9-5.1 5.6-19.4 19-19.4 46.3 0 27.3 19.9 53.7 22.6 57.4 2.8 3.7 39.1 59.7 94.8 83.8 35.2 15.2 49 16.5 66.6 13.9 10.7-1.6 32.8-13.4 37.4-26.4 4.6-13 4.6-24.1 3.2-26.4-1.3-2.5-5-3.9-10.5-6.6z"></path></svg> Mande um elogio no Whatsapp</span></a>
+	</div>
 </div>
 <?php include_once('footer.php'); ?>

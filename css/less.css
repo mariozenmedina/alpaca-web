@@ -1005,6 +1005,14 @@ h3.subtitulo {
     margin: 30px;
     flex: 0 0 40%;
   }
+  .servicos#servicos .container .itens .item:nth-child(3n+2) {
+    background-image: linear-gradient(to bottom right, #279F84 9.9%, #F7F7F7 10%);
+    background-size: 100% 100%;
+  }
+  .servicos#servicos .container .itens .item:nth-child(3n+3) {
+    background-image: linear-gradient(to bottom right, #F69337 9.9%, #F7F7F7 10%);
+    background-size: 100% 100%;
+  }
   .servicos#servicos .container .itens .item:hover {
     background-size: 1100% 1100%;
   }
@@ -1155,7 +1163,7 @@ h3.subtitulo {
   display: flex;
   align-items: center;
   justify-content: center;
-  height: 150px;
+  height: 100px;
   padding: 20px;
   position: relative;
   -webkit-transition: all 200ms ease-in-out;
@@ -1168,14 +1176,9 @@ h3.subtitulo {
   border-radius: 5px;
   background-color: #FFF;
   box-shadow: 2px 2px 5px 2px rgba(0, 0, 0, 0.1);
-  /*@media(min-width:600px){ flex: 0 0 33.333%; }
-            @media(min-width:768px){ flex: 0 0 25%; }
-            @media(min-width:992px){ flex: 0 0 12.5%; }
-            @media(min-width:1200px){ flex: 0 0 6.25%; }
-            @media(min-width:1400px){ flex: 0 0 5%; }*/
 }
 .clientes#clientes .container-full .item img {
-  max-width: 200px;
+  max-width: 100px;
   max-height: 100%;
   position: relative;
   z-index: 600;
@@ -1200,6 +1203,12 @@ h3.subtitulo {
   .clientes#clientes .container h2 {
     font-size: 48px;
   }
+  .clientes#clientes .container-full .item {
+    height: 150px;
+  }
+  .clientes#clientes .container-full .item img {
+    max-width: 200px;
+  }
 }
 @media (min-width: 1200px) {
   .clientes#clientes .container h2 {
@@ -1209,5 +1218,36 @@ h3.subtitulo {
 @media (min-width: 1400px) {
   .clientes#clientes .container h2 {
     font-size: 72px;
+  }
+}
+/*********************************** CRÉDITOS ***********************************/
+.credito#credito {
+  background-color: #F7F7F7;
+  padding-top: 50px;
+  padding-bottom: 200px;
+  border-bottom: solid 30px #333;
+}
+.credito#credito .container {
+  text-align: center;
+}
+@media (min-width: 992px) {
+  .credito#credito .container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+}
+.credito#credito .container nowrap {
+  white-space: nowrap;
+}
+.credito#credito .container h6 {
+  text-transform: uppercase;
+  font-size: 12px;
+  margin-right: 20px;
+  line-height: 180%;
+}
+@media (min-width: 992px) {
+  .credito#credito .container h6 {
+    font-size: 18px;
   }
 }
