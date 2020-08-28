@@ -269,7 +269,7 @@ h3.subtitulo{
     .bgelo; padding-top: 15px; padding-bottom: 15px;
     .container{
         display: flex; align-items: center; justify-content: space-between;
-        h1{ .ib; .m0; .p0; .lh100; .logo{ width: 160px; } }
+        h1{ .ib; .m0; .p0; .lh100; .logo{ width: 260px; @media(min-width:768px){ width: 180px; } } }
         .open-menu{ .ib; svg{ height: 50px; }  @media(min-width:1200px){ display: none !important; } }
         #menu-input{
             position: absolute; height: 0; width: 0; overflow: hidden; opacity: 0; visibility: hidden;
@@ -478,10 +478,16 @@ h3.subtitulo{
                 content: ''; position: absolute; bottom: -10px; left: 0; height: 5px; width: 80px; .blaranja;
             }
         }
+        & > div{ .tc; }
         .mario{
             position: relative; .ib; .geleca;
             img{ border-radius: 50% 20%; max-width: 100%; width: 500px; animation: radius infinite linear 7s; }
             &::before{ background: none; border: solid 2px @verde; filter: none; animation-duration: 26s; }
+        }
+        .info{
+            max-width: 500px; margin: auto; text-align: left;
+            h3{ .t36; }
+            p{ .lh160; span{ .t20; } }
         }
     }
     @media (min-width:768px){
@@ -491,14 +497,21 @@ h3.subtitulo{
     @media (min-width:992px){
         .container{
             h2{ .t48; }
+            & > div{
+                text-align: left; display: flex; align-items: center; justify-content: space-between;
+                .info{
+                    width: 500px; margin: 0; margin-left: 30px;
+                    h3{ margin-top: 0; }
+                }
+            }
         }
     }
     @media (min-width:1200px){
         .container{
             h2{ .t56; }
-            .itens{
-                .item{
-                    flex: 1 1 20%;
+            & > div{
+                .info{
+                    p{ .t18; span{ .t24; } }
                 }
             }
         }
@@ -506,6 +519,15 @@ h3.subtitulo{
     @media (min-width:1400px){
         .container{
             h2{ .t72; }
+            & > div{
+                justify-content: center;
+                .info{
+                    position: relative; margin-left: 200px;
+                    h3{
+                        position: absolute; .t72; left: -30px; bottom: 0px; width: 100%; transform: rotate(-90deg); transform-origin: bottom left; margin-bottom: 20px; .ccinza;
+                    }
+                }
+            }
         }
     }
 }

@@ -545,7 +545,12 @@ h3.subtitulo {
   line-height: 100%;
 }
 .topo#topo .container h1 .logo {
-  width: 160px;
+  width: 260px;
+}
+@media (min-width: 768px) {
+  .topo#topo .container h1 .logo {
+    width: 180px;
+  }
 }
 .topo#topo .container .open-menu {
   display: inline-block;
@@ -1074,6 +1079,9 @@ h3.subtitulo {
   width: 80px;
   background-color: #F69337;
 }
+.sobre#sobre .container > div {
+  text-align: center;
+}
 .sobre#sobre .container .mario {
   position: relative;
   display: inline-block;
@@ -1104,22 +1112,71 @@ h3.subtitulo {
   filter: none;
   animation-duration: 26s;
 }
+.sobre#sobre .container .info {
+  max-width: 500px;
+  margin: auto;
+  text-align: left;
+}
+.sobre#sobre .container .info h3 {
+  font-size: 36px;
+}
+.sobre#sobre .container .info p {
+  line-height: 160%;
+}
+.sobre#sobre .container .info p span {
+  font-size: 20px;
+}
 @media (min-width: 992px) {
   .sobre#sobre .container h2 {
     font-size: 48px;
+  }
+  .sobre#sobre .container > div {
+    text-align: left;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  .sobre#sobre .container > div .info {
+    width: 500px;
+    margin: 0;
+    margin-left: 30px;
+  }
+  .sobre#sobre .container > div .info h3 {
+    margin-top: 0;
   }
 }
 @media (min-width: 1200px) {
   .sobre#sobre .container h2 {
     font-size: 56px;
   }
-  .sobre#sobre .container .itens .item {
-    flex: 1 1 20%;
+  .sobre#sobre .container > div .info p {
+    font-size: 18px;
+  }
+  .sobre#sobre .container > div .info p span {
+    font-size: 24px;
   }
 }
 @media (min-width: 1400px) {
   .sobre#sobre .container h2 {
     font-size: 72px;
+  }
+  .sobre#sobre .container > div {
+    justify-content: center;
+  }
+  .sobre#sobre .container > div .info {
+    position: relative;
+    margin-left: 200px;
+  }
+  .sobre#sobre .container > div .info h3 {
+    position: absolute;
+    font-size: 72px;
+    left: -30px;
+    bottom: 0px;
+    width: 100%;
+    transform: rotate(-90deg);
+    transform-origin: bottom left;
+    margin-bottom: 20px;
+    color: #AAA;
   }
 }
 /*********************************** CLIENTES ***********************************/
