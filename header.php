@@ -24,7 +24,6 @@
 <!-- FIM DOS METAS -->
 <link rel="shortcut icon" href="./img/icon.png" />
 <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@600&family=Raleway:wght@800&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="./style.css" type="text/css" media="all">
 <link rel="stylesheet" href="./css/less.css" type="text/css" media="all">
 </head>
 <body>

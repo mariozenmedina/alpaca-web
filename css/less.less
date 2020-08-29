@@ -415,6 +415,9 @@ h3.subtitulo{
             .item{
                 margin: 30px 0px; .bbranco; .rd5; .shadow; padding: 35px; .tc; position: relative; .transition; transition-duration: 500ms;
                 flex: 0 0 100%; max-width: 360px;
+                background-image: linear-gradient(to bottom right, @azul 9.9%, @gelo 10%); background-size: 100% 100%;
+                &:nth-child(3n+2){ background-image: linear-gradient(to bottom right, @verde 9.9%, @gelo 10%); background-size: 100% 100%; }
+                &:nth-child(3n+3){ background-image: linear-gradient(to bottom right, @laranja 9.9%, @gelo 10%); background-size: 100% 100%; }
                 svg{ height: 30px; margin: auto; .cgrafite; .transition; }
                 h4{ .t18; .cgrafite; .altfont; .transition; }
                 p{ .t14; .cgrafite; .lh160; .transition; margin-bottom: 0; }
@@ -426,9 +429,6 @@ h3.subtitulo{
         .container{
             .itens{
                 .item{
-                    background-image: linear-gradient(to bottom right, @azul 9.9%, @gelo 10%); background-size: 100% 100%;
-					&:nth-child(3n+2){ background-image: linear-gradient(to bottom right, @verde 9.9%, @gelo 10%); background-size: 100% 100%; }
-					&:nth-child(3n+3){ background-image: linear-gradient(to bottom right, @laranja 9.9%, @gelo 10%); background-size: 100% 100%; }
                     margin: 30px; flex: 0 0 40%;
                     &:hover{
                         background-size: 1100% 1100%;
